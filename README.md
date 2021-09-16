@@ -6,4 +6,6 @@
 
 3. requests and BeautifulSoup을 통한 Crowling
 
-4. selenium을 이용한 웹크롤링
+4. SQL을 통한 db 저장 and crowling
+
+5. selenium을 이용한 웹크롤링
