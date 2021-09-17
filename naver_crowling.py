@@ -18,7 +18,7 @@ def krx_code():
 # krx db에 넣기 
 def insert_krx(df):
     # 메인코드 - 설명
-    conn = pymysql.connect(host='localhost', user='root', password='1111',
+    conn = pymysql.connect(host='localhost', user='root', password='****',
                          db = 'investor', charset ='utf8')
     cur = conn.cursor()
 
@@ -36,7 +36,7 @@ def insert_krx(df):
 
 # db에서 조목코드 뽑아오기
 def select_krx():
-    conn = pymysql.connect(host='localhost', user='root', password='1111',
+    conn = pymysql.connect(host='localhost', user='root', password='****',
                         db = 'investor', charset ='utf8')
     cur = conn.cursor()
     cur.execute('select id_code from company_info')
@@ -87,7 +87,7 @@ insert_krx(krx_data)
 com_list = select_krx()
 
 
-conn = pymysql.connect(host='localhost', user='root', password='1111',
+conn = pymysql.connect(host='localhost', user='root', password='****',
                          db = 'investor', charset ='utf8')
 cur = conn.cursor()
 
